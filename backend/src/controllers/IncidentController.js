@@ -8,7 +8,7 @@ module.exports = {
     const [count] = await connection("incidents").count();
 
     const incidents = await connection("incidents")
-      .join("ongs", "ong_id", "=", "incidents.ong_id") //Faz o JOIN com a tabela de incidents
+      .join("ongs", "ongs.id", "=", "incidents.ong_id") //Faz o JOIN com a tabela de incidents
       .limit(5) //Limita o nro de registros da consulta
       .offset((page - 1) * 5) //Diz de quantos em quantos deve avançar
       .select([
