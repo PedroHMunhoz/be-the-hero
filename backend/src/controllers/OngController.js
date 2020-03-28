@@ -1,5 +1,5 @@
 const connection = require("../database/connection"); //Importa a conexão para poder utilizar o banco de dados
-const crypto = require("crypto"); //Importa o pacote crypto, disponíve no Node
+const generateUniqueId = require("../utils/generateUniqueId"); //Importa a function que encapsula a geração do ID único
 
 module.exports = {
   async index(request, response) {
@@ -13,7 +13,7 @@ module.exports = {
     const { name, email, whatsapp, city, uf } = request.body; //Pega os dados de forma desestruturizada, um dado em cada propriedade
 
     //Gera 4 bytes de caracteres hexadecimais aleatórios
-    const id = crypto.randomBytes(4).toString("HEX");
+    const id = generateUniqueId();
 
     //O Await faz o Node aguardar a execução do código, antes de seguir adiante
     await connection("ongs").insert({

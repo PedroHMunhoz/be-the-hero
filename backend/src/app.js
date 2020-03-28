@@ -1,5 +1,6 @@
 const express = require("express"); //Importa a lib do Express pra dentro desta variável
 const cors = require("cors"); //Importa o CORS para a aplicação
+const { errors } = require("celebrate"); //Importa o objeto errors do Celebrate, para tratar as mensagens de erro corretamente
 const routes = require("./routes"); //Importa a rota exportada do pacote routes.js
 
 //Instancia um novo express na variável app
@@ -14,6 +15,8 @@ app.use(express.json());
 
 //Informa ao Express pra usar as rotas do arquivo routes
 app.use(routes);
+
+app.use(errors());
 
 /**
  *  Rota / Recurso
@@ -47,6 +50,8 @@ app.use(routes);
  */
 
 //Informa a porta onde a aplicação irá rodar, exemplo localhost:3333 no browser
-app.listen(3333);
+// app.listen(3333);
 
 //npm install nodemon -D -> Para instalar o Nodemon somente em DEV
+
+module.exports = app; //Exporta o app para poder ser usado externamente, quando necessário
