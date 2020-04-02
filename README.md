@@ -1,5 +1,5 @@
 # Projeto Be The Hero - Semana Omnistack 11 Rocketseat
-Este projeto é o resultado do curso ministrado pela Rocketseat na Semana Omnistack 11, tendo como intuito do projeto era ensinar conceitos de backend, frontend e mobile de forma prática e simplificada, utilizando a stack de JavaScript para todo o sistema.
+Este projeto é o resultado do curso ministrado pela Rocketseat na Semana Omnistack 11, tendo como intuito ensinar conceitos de backend, frontend e mobile de forma prática e simplificada, utilizando a stack de JavaScript para todo o sistema.
 
 # Sobre o Be The Hero
 O Be The Hero é uma plataforma que conecta as demandas de ONGs com pessoas interessadas em ajudar. Nela, a ONG pode cadastrar suas necessidades em uma plataforma web, com um breve descritivo e o valor necessário para cumprir a demanda. Dessa forma, as pessoas interessadas podem acessar através do aplicativo mobile e entrar em contato com a ONG, via e-mail ou WhatsApp, para ajudar nas causas cadastradas.
