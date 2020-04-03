@@ -31,6 +31,7 @@ Abaixo estão listadas as tecnologias utilizadas para o desenvolvimento da aplic
 ### Outros:
 * Compatibilidade de JS para navegadores antigos: Babel
 * Ícones em interfaces: React Icons
+* Testes de endpoint: Insomnia
 
 # Aprendizado
 Com as aulas ministradas e a aplicação desenvolvida, foi possível aprender bastante sobre toda a stack do JavaScript, bem como o uso de ferramentas que agregam o ambiente de desenvolvimento e facilitam na execução das diversas tarefas necessárias. Foram abordados conceitos essenciais para um desenvolvedor como organização de código, versionamento, comunicação com APIs externas, execução de testes unitários e de integração, validações de formulários e usabilidade de software.
